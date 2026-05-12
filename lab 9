@@ -1,0 +1,18 @@
+import cv2
+
+# Read image
+img = cv2.imread('image.jpg')
+
+# Horizontal Flip
+horizontal = cv2.flip(img, 1)
+
+# Vertical Flip
+vertical = cv2.flip(img, 0)
+
+# Display images
+cv2.imshow('Original Image', img)
+cv2.imshow('Horizontal Flip', horizontal)
+cv2.imshow('Vertical Flip', vertical)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
